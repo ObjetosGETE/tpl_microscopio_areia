@@ -1,0 +1,94 @@
+/*****************************************/
+/************ Tela inicial **************/
+/***************************************/
+
+.bg {
+    position: relative;
+}
+
+.sobrepor {
+    position: absolute;
+}
+
+.areia1 {
+    top: 44rem;
+    left: 68rem;
+    width: 4%;
+}
+
+.areia2 {
+    top: 43.8rem;
+    left: 50rem;
+    width: 5%;
+}
+
+.botao1 {
+	left: 64%;
+	width: 31%;
+	height: 50%;
+	top: 45%;
+    /* opacity: 0; */
+}
+
+.botao2 {
+	left: 39%;
+	width: 24%;
+	height: 93%;
+	top: 2%;
+    /* opacity: 0; */
+}
+
+#seta {
+    top: 32rem;
+    left: 71rem;
+    animation: efeitinho 1s infinite alternate;
+}
+
+.seta2 {
+    top: 6rem !important;
+    left: 60rem !important;
+}
+
+.movimento {
+    animation: deslocamento 2s !important;
+}
+
+@keyframes efeitinho {
+    from {
+        transform: translateY(50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes efeitinho2 {
+    from {
+        transform: translateX(50px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes deslocamento {
+    0% {
+        top: 32rem;
+        left: 71rem;
+    }
+
+    100% {
+        top: 6rem;
+        left: 60rem;
+    }
+}
+
+/*****************************************/
+/************** Tela modal **************/
+/***************************************/
+
+.bg-escuro{
+    background-color: #525252;
+}
