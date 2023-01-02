@@ -23,18 +23,18 @@
 }
 
 .botao1 {
-	left: 64%;
-	width: 31%;
-	height: 50%;
-	top: 45%;
+    left: 64%;
+    width: 31%;
+    height: 50%;
+    top: 45%;
     /* opacity: 0; */
 }
 
 .botao2 {
-	left: 39%;
-	width: 24%;
-	height: 93%;
-	top: 2%;
+    left: 39%;
+    width: 24%;
+    height: 93%;
+    top: 2%;
     /* opacity: 0; */
 }
 
@@ -55,7 +55,7 @@
 
 @keyframes efeitinho {
     from {
-        transform: translateY(50px);
+        transform: translateY(40px);
     }
 
     to {
@@ -63,32 +63,83 @@
     }
 }
 
-@keyframes efeitinho2 {
-    from {
-        transform: translateX(50px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes deslocamento {
-    0% {
-        top: 32rem;
-        left: 71rem;
-    }
-
-    100% {
-        top: 6rem;
-        left: 60rem;
-    }
-}
-
 /*****************************************/
 /************** Tela modal **************/
 /***************************************/
 
-.bg-escuro{
+.bg-escuro {
     background-color: #525252;
 }
+
+.btn.btn-primary {
+    background-color: #525252;
+    border: none;
+}
+
+.btn:hover {
+    color: gray;
+    border: 1px solid gray;
+}
+
+.btn.btn-primary::before {
+    content: ' ';
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    border: 0.3em solid;
+    border-radius: 0.3rem;
+    margin-right: .5em;
+    position: relative;
+    top: .25em;
+    color: black;
+}
+
+.titulo {
+    color: white;
+    padding-top: 3%;
+    text-transform: uppercase;
+}
+
+/*****************************************/
+/************** Reponsivo **************/
+/***************************************/
+
+@media (max-width: 480px) {
+    
+    .botao1 {
+        left: 67%;
+        width: 31%;
+        height: 12%;
+        top: 13%;
+        opacity: 0;
+    }
+
+    .botao2 {
+        left: 39%;
+        width: 24%;
+        height: 22%;
+        top: 2%;
+        opacity: 0;
+    }
+
+    #seta {
+        top: 5rem;
+        left: 16rem;
+        animation: efeitinho 1s infinite alternate;
+        width: 10%;
+    }
+
+    .areia1 {
+        top: 10.2rem;
+        left: 15.3rem;
+        width: 4%;
+    }
+    .areia2 {
+        top: 9.4rem;
+        left: 10.8rem;
+        width: 5%;
+    }
+
+    }
+
+    

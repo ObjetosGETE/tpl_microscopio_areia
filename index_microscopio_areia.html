@@ -25,30 +25,76 @@
             <img src="./img/seta.png" id="seta" class="img-fluid sobrepor">
             <button type="button" class="sobrepor botao1">primeiro</button>
             <button type="button" class="sobrepor botao2" data-bs-toggle="modal"
-                data-bs-target="#modalMinerais">segundo</button>
+                data-bs-target="#modalZoom01">segundo</button>
         </div>
-        <!-- Modal -->
-        <div class="modal fade" id="modalMinerais" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content bg-escuro">
 
+
+        
+        <!-- Modal -->
+
+        <div class="modal fade" id="modalZoom01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-escuro">
+                    <div>
+                        <h5 class="text-center titulo">Grãos</h5>
+                    </div>
                     <div class="modal-body row">
-                        <div class="col-9"> <img src="./img/zoom_01.png" class="img-fluid"></div>
+                        <div class="col-9"> <img src="./img/zoom_01.png" class="img-fluid"> </div>
                         <div class="col-3">
-                            <ul class="list-group">
-                                <li class="list-group-item ajuste">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                    Zoom 01
-                                </li>
-                                <li class="list-group-item ajuste">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                    Zoom 02
-                                </li>
-                                <li class="list-group-item ajuste">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                    Zoom 03
-                                </li>
-                            </ul>
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-primary zoom01" data-bs-toggle="modal"
+                                    data-bs-target="#modalZoom01">Zoom 01</button>
+                                <button type="button" class="btn btn-primary zoom02" data-bs-toggle="modal"
+                                    data-bs-target="#modalZoom02">Zoom 02</button>
+                                <button type="button" class="btn btn-primary zoom03" data-bs-toggle="modal"
+                                    data-bs-target="#modalZoom03">Zoom 03</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalZoom02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-escuro">
+                    <div>
+                        <h5 class="text-center titulo">Grãos</h5>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-9"> <img src="./img/zoom_02.png" class="img-fluid"></div>
+                        <div class="col-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-primary zoom01" data-bs-toggle="modal"
+                                    data-bs-target="#modalZoom01">Zoom 01</button>
+                                <button type="button" class="btn btn-primary zoom02" data-bs-toggle="modal"
+                                    data-bs-target="#modalZoom02">Zoom 02</button>
+                                <button type="button" class="btn btn-primary zoom03" data-bs-toggle="modal"
+                                    data-bs-target="#modalZoom03">Zoom 03</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalZoom03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-escuro">
+                    <div>
+                        <h5 class="text-center titulo">Mineirais</h5>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-9"> <img src="./img/zoom_03.jpg" class="img-fluid"></div>
+                        <div class="col-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-primary zoom01" data-bs-toggle="modal"
+                                    data-bs-target="#modalZoom01">Zoom 01</button>
+                                <button type="button" class="btn btn-primary zoom02" data-bs-toggle="modal"
+                                    data-bs-target="#modalZoom02">Zoom 02</button>
+                                <button type="button" class="btn btn-primary zoom03" data-bs-toggle="modal"
+                                    data-bs-target="#modalZoom03">Zoom 03</button>
+                            </div>
                         </div>
                     </div>
                 </div>
