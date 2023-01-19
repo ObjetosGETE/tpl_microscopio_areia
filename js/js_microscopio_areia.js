@@ -20,4 +20,3 @@ $("#iniciar").on("click", function(){
     $("#microscopio").removeClass("oculto");
     $("#capaMicroscopio").addClass("oculto");
 });
-
