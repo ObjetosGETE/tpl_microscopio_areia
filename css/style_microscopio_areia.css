@@ -21,6 +21,13 @@
     filter: drop-shadow(18px 17px 10px #AFAFAF);
 }
 
+.horizontal {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 /***************************************************************/
 /************************ Microscopio *************************/
 /*************************************************************/
@@ -124,13 +131,68 @@
     border: 0.7em solid;
 }
 
-.btn.btn-primary.quadradinho.preenchido::before{
+.btn.btn-primary.quadradinho.preenchido::before {
     border: 0.7em solid;
 }
 
 /***************************************************************/
 /************** Reponsividade com media queries ***************/
 /*************************************************************/
+
+@media screen and (height: 360px) {
+    @media screen and (width: 760px) {
+
+        .botao1 {
+            left: 29rem;
+            width: 35%;
+            height: 64%;
+            top: 11rem;
+        }
+
+        .botao2 {
+            left: 39%;
+            width: 34%;
+            height: 103%;
+            top: 14%;
+        }
+
+        .areia1 {
+            top: 21.6rem;
+            left: 32.4rem;
+            width: 4%;
+        }
+
+        .areia2 {
+            top: 20rem;
+            left: 22.8rem;
+            width: 5%;
+        }
+
+        #seta1 {
+            top: 16rem;
+            left: 36rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        #seta2 {
+            top: 4.2rem;
+            left: 28.3rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        .col-9 {
+            flex: 0 0 auto;
+            width: 108%;
+        }
+
+        .btn-group-vertical {
+            flex-direction: row;
+        }
+    }
+}
+
 @media screen and (height: 360px) {
     @media screen and (width: 800px) {
 
@@ -182,10 +244,6 @@
         .btn-group-vertical {
             flex-direction: row;
         }
-
-        .modal {
-            --bs-modal-width: 400px;
-        }
     }
 }
 
@@ -230,19 +288,6 @@
             left: 33.3rem;
             animation: efeitinho 1s infinite alternate;
             width: 9%;
-        }
-
-        .col-9 {
-            flex: 0 0 auto;
-            width: 100%;
-        }
-
-        .btn-group-vertical {
-            flex-direction: row;
-        }
-
-        .modal {
-            --bs-modal-width: 400px;
         }
     }
 }
@@ -289,19 +334,6 @@
             animation: efeitinho 1s infinite alternate;
             width: 9%;
         }
-
-        .col-9 {
-            flex: 0 0 auto;
-            width: 108%;
-        }
-
-        .btn-group-vertical {
-            flex-direction: row;
-        }
-
-        .modal {
-            --bs-modal-width: 400px;
-        }
     }
 }
 
@@ -345,19 +377,6 @@
             left: 52.3rem;
             animation: efeitinho 1s infinite alternate;
             width: 9%;
-        }
-
-        .col-9 {
-            flex: 0 0 auto;
-            width: 108%;
-        }
-
-        .btn-group-vertical {
-            flex-direction: row;
-        }
-
-        .modal {
-            --bs-modal-width: 400px;
         }
     }
 }
@@ -403,18 +422,35 @@
             animation: efeitinho 1s infinite alternate;
             width: 9%;
         }
+    }
+}
 
-        .col-9 {
-            flex: 0 0 auto;
-            width: 108%;
+@media screen and (height: 1080px) {
+    @media screen and (width: 1920px) {
+
+        .areia1 {
+            top: 54.3rem;
+            left: 81.6rem;
+            width: 4%;
         }
 
-        .btn-group-vertical {
-            flex-direction: row;
+        .areia2 {
+            top: 74.5%;
+            left: 58rem;
         }
 
-        .modal {
-            --bs-modal-width: 400px;
+        #seta1 {
+            top: 40.5rem;
+            left: 85rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        #seta2 {
+            top: 15.2rem;
+            left: 70.3rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
         }
     }
 }

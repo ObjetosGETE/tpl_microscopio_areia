@@ -16,7 +16,17 @@ $(".botao2").on("click", function () {
     $(".botao1").prop("disabled", false);
 });
 
-$("#iniciar").on("click", function(){
+$("#iniciar").on("click", function () {
     $("#microscopio").removeClass("oculto");
     $("#capaMicroscopio").addClass("oculto");
+});
+
+$(window).bind('resize', function () {
+    if (screen.height > screen.width) {
+        $('.body-microscopio').addClass('horizontal');
+    } else {
+        $('.body-microscopio').removeClass('horizontal');
+        $('.modal-dialog').removeClass('modal-fullscreen');
+        $('.modal-dialog').addClass('modal-lg');
+    }
 });
