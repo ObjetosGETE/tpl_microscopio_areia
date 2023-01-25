@@ -10,14 +10,14 @@
     position: absolute;
 }
 
-.oculto {
+/* .oculto {
     display: none;
-}
+} */
 
 #iniciar {
     width: 50%;
     top: 30%;
-    background: url(/img/bgBotaoInicial.png);
+   /* background: url(/img/bgBotaoInicial.png); */
     filter: drop-shadow(18px 17px 10px #AFAFAF);
 }
 
@@ -39,36 +39,36 @@
 /*************************************************************/
 
 .areia1 {
-    top: 44rem;
-    left: 68rem;
+    top: 814px;
+    left: 1254px;
     width: 4%;
 }
 
 .areia2 {
-    top: 43.8rem;
-    left: 50rem;
+    top: 805px;
+left: 925px;
     width: 5%;
 }
 
 .botao1 {
-    left: 64%;
-    width: 31%;
-    height: 50%;
-    top: 45%;
+    right: 68px;
+    width: 699px;
+    height: 219px;
+    top: 751px;
     opacity: 0;
 }
 
 .botao2 {
-    left: 39%;
-    width: 24%;
-    height: 93%;
-    top: 2%;
+    left: 770px;
+    width: 412px;
+    height: 750px;
+    top: 230px;
     opacity: 0;
-}
+  }
 
 #seta1 {
-    top: 32rem;
-    left: 71rem;
+    top: 590px;
+    left: 1270px;
     animation: efeitinho 1s infinite alternate;
 }
 
@@ -78,10 +78,17 @@
     animation: efeitinho 1s infinite alternate;
 }
 
-.some {
+/* .some {
     display: none;
+} */
+@media only screen and (max-width: 991px){
+    .visualizacoes {
+        max-width:440px;
+        margin: auto;
+        display: block;
+        height: auto;
+    }
 }
-
 @keyframes efeitinho {
     from {
         transform: translateY(40px);
@@ -95,7 +102,11 @@
 /***************************************************************/
 /********************** Estilos modais ************************/
 /*************************************************************/
-
+.btn-close {
+    opacity: 1;
+    font-size: 27px;
+    margin-right: 20px !important;
+  }
 .bg-escuro {
     background-color: #525252;
 }
@@ -125,9 +136,9 @@
 
 .titulo {
     color: white;
-    padding-top: 3%;
+    padding-top: 10px;
     text-transform: uppercase;
-}
+  }
 
 .bg-branco {
     background-color: white;
@@ -144,10 +155,39 @@
 /***************************************************************/
 /************** Reponsividade com media queries ***************/
 /*************************************************************/
+.crop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden
+}
+.secoes {
+            width: 1920px; /* 1280x768 = 16:9 */
+            height: 1080px;
+            display: block;
+            position: relative;
+            transform-origin: center center;
+            overflow: hidden;
+}
+.colocar_no_meio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: calc(1920px / -2);
+    margin-top: calc(1080px / -2);
+}
+html, body{
+    height: 100%;
 
+}
+body{
+    overflow: hidden;
+    background-color: #333
+}
 @media only screen and (orientation: portrait) {
     .barreira {
-        display: block;
+        display: flex;
+        align-items: center;
         width: 100%;
         height: 100%;
         position: fixed;
@@ -157,8 +197,12 @@
         right: 0;
         bottom: 0;
         background-color: #6a6aff;
-    }
+        z-index: 9999999999999999999;
+      }
+     
 }
+/* 
+
 
 @media screen and (height: 360px) {
     @media screen and (width: 760px) {
@@ -474,4 +518,4 @@
             width: 9%;
         }
     }
-}
+} */
