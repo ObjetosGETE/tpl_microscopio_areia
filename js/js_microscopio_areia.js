@@ -23,7 +23,7 @@ $("#iniciar").on("click", function () {
 
 // inicia o resize
 resizeBodyMicroscopio()
-        
+
 function resizeBodyMicroscopio(){
     var largura = 1920;
     var altura = 1080;
@@ -31,10 +31,12 @@ function resizeBodyMicroscopio(){
     var larguraScreen = $(window).width();
     var alturaScreen = $(window).height();
     var proporcao;
-    if (altura < largura){
-        proporcao = ((alturaScreen * 100) / altura)/100;
-    }else{
-       proporcao = ((larguraScreen * 100) / largura)/100;
+    var proporcaoAltura = (alturaScreen * 100) / altura / 100;
+    var proporcaoLargura = (larguraScreen * 100) / largura / 100;
+    if (proporcaoAltura < proporcaoLargura) {
+      proporcao = proporcaoAltura
+    } else {
+      proporcao = proporcaoLargura
     }
     
 
